@@ -1,0 +1,119 @@
+.grid-container {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+.grid-child1 {
+  border-radius: 20px;
+  width: 700px;
+  opacity: 0.85;
+}
+.hh1 {
+  font-size: 120px;
+  font-family: "Anton", sans-serif;
+}
+.pp1 {
+  font-size: 18px;
+}
+.img1 {
+  width: 90px;
+  height: 70px;
+}
+.fetchInput {
+  height: fit-content;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-left: 20px;
+}
+.btn1 {
+  width: 100%;
+}
+
+td,
+th {
+  font-size: 18px;
+}
+.th1 {
+  font-size: 45px;
+}
+
+.input3 {
+  width: 400px;
+  height: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the width of grid-child1 */
+  .grid-child1 {
+    width: 90%; /* Make it take 90% of the screen width */
+  }
+
+  /* Decrease the font size for the heading */
+  .hh1 {
+    font-size: 60px; /* Reduce size for smaller screens */
+  }
+
+  /* Adjust the paragraph font size */
+  .pp1 {
+    font-size: 16px; /* Slightly reduce font size */
+  }
+
+  /* Adjust the image size */
+  .img1 {
+    width: 70px; /* Smaller image */
+    height: 50px;
+  }
+
+  /* Ensure the input fields fit nicely on mobile */
+  .fetchInput {
+    margin-left: 0; /* Remove margin on smaller screens */
+    width: 100%; /* Full width on mobile */
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+    padding: 8px;
+  }
+
+  /* Table data font size adjustment */
+  td,
+  th {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  /* Reduce the size of the table header */
+  .th1 {
+    font-size: 30px; /* Smaller table header text */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For very small devices */
+  .grid-child1 {
+    width: 95%; /* Adjust width for very small screens */
+  }
+
+  .hh1 {
+    font-size: 45px; /* Smaller heading for tiny screens */
+  }
+
+  .pp1 {
+    font-size: 14px; /* Even smaller paragraph text */
+  }
+
+  .img1 {
+    width: 50px; /* Adjust the image size */
+    height: 40px;
+  }
+
+  .fetchInput {
+    font-size: 14px; /* Smaller input field text */
+  }
+
+  td,
+  th {
+    font-size: 14px; /* Reduce table font size further */
+  }
+
+  .th1 {
+    font-size: 25px; /* Adjust table header for very small screens */
+  }
+}
